@@ -6,7 +6,7 @@
         <title>Apple Store - Re-created by JeniDub</title>
         
         <!-- Custom CSS stylesheet import-->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./css/styles.css">
         
         <!-- Google Fonts Import: Noto San Serif, Faustina Serif fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,29 +18,61 @@
     </head>
     
     <body>
-        <!-- #1 Responsive navbar with at least 3 links:
-            => Apple Logo img, Store, Mac, iPad, iPhone, Watch, Vision, AirPods, AirTag, TV & Home | Search magglass icon, shopping bag icon
-        -->
-
-        <!-- #2 Hero section: 90/10 split; in the 10 split, two divs (Need shopping help) and (Visit an Apple Store)
+        <!-- #1 Responsive centered navbar with at least 3 links -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid row">
+                <a id="apple-logo" class="navbar-brand col-2" href="#">
+                    <img src="./img/apple-logo.png" alt="Apple Brand Logo" width="24" height="24">
+                </a>
+                <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-md-8 navbar-section" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">Store</a>
+                        <a class="nav-link" href="#">Mac</a>
+                        <a class="nav-link" href="#">iPad</a>
+                        <a class="nav-link" href="#">iPhone</a>
+                        <a class="nav-link" href="#">Watch</a>
+                        <a class="nav-link" href="#">Vision</a>
+                        <a class="nav-link" href="#">AirPods</a>
+                        <a class="nav-link" href="#">TV & Home</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <img class="mx-1" src="./img/search.png" alt="Search Apple Store icon" width="20" height="20">
+                    <img class="mx-4" src="./img/shopping-bag.png" alt="View Shopping Cart icon" width="28" height="28">
+                </div>
+            </div>
+        </nav>
+        <!-- 
+            #2 Hero section: 90/10 split; in the 10 split, two divs (Need shopping help) and (Visit an Apple Store)
             Header text: Store. The best way to buy the products you love.
             Submenu text 1: Need shopping help? // Ask a Specialist (link to form section)
             Submenu text 2: Visit an Apple Store // Find one near you (link to map)
         -->
-        <header>
-            <div>
-                <h1><span class="black-sans-serif">Store.</span> The best way to buy the products you love.</h1>
+        <header class="row">
+            <div id="hero-text" class="col-md-9 d-flex justify-content-center align-items-center">
+                <h1>
+                    <span class="black-sans-serif">Store.</span>
+                    The best way to buy the products you love.
+                </h1>
             </div>
-            <div>
-                <div>
-                    <img src="" alt=""> <!-- rounded image of agent -->
-                    <p class="black-sans-serif">Need shopping help?</p>
-                    <p><a href="#">Ask a Specialist</a></p>
+            <div class="col-md-3">
+                <div class="row my-3">
+                    <img class="col-2 m-0" src="./img/map-pin.png" alt="" width="40px" height="40px"> <!-- rounded image of agent -->
+                    <div class="col-10 m-0">
+                        <p class="black-sans-serif m-0">Need shopping help?</p>
+                        <p class="title-help-link m-0"><a href="#">Ask a Specialist</a></p>  
+                    </div>
+
                 </div>
-                <div>
-                    <img src="" alt=""> <!-- rounded image of pin with Apple logo -->
-                    <p class="black-sans-serif">Visit an Apple Store</p>
-                    <p><a href="#">Find one near you ></a></p>
+                <div class="row my-3">
+                    <img class="col-2 m-0" src="./img/map-pin.png" alt="" width="40px" height="40px"> <!-- map pin -->
+                    <div class="col-10">
+                        <p class="black-sans-serif m-0">Visit an Apple Store</p>
+                        <p class="title-help-link m-0"><a href="#">Find one near you ></a></p>
+                    </div>
                 </div>
             </div>
         </header>

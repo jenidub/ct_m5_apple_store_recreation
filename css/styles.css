@@ -1,0 +1,46 @@
+body {
+    background-color: #F5F5F7;
+    font-family: "Noto Sans", sans-serif;
+    color: #6E6E73;
+}
+
+header {
+    margin-top: 30px !important;
+}
+
+h1 {
+    font-size: 45px !important;
+    color: #6E6E73 !important;
+}
+
+.black-sans-serif {
+    color: black;
+    font-weight: 600;
+}
+
+.navbar-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 10px;
+}
+
+.title-help-link {
+    letter-spacing: .05em;
+}
+
+#hero-text {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#apple-logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
