@@ -1,11 +1,10 @@
 body {
-    background-color: #F5F5F7;
+    background-color: #F5F5F7 !important;
     font-family: "Noto Sans", sans-serif;
-    color: #6E6E73;
 }
 
 header {
-    margin-top: 30px !important;
+    margin: 30px 0px 20px 80px !important;
 }
 
 h1 {
@@ -28,15 +27,11 @@ h1 {
     display: inline-block;
     margin: 0 15px;
     font-size: 10px;
+    font-weight: lighter;
 }
 
 .title-help-link {
     letter-spacing: .05em;
-}
-
-#hero-text {
-    width: 700px;
-    margin: 0 auto;
 }
 
 #apple-logo {
