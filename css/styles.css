@@ -59,12 +59,17 @@ h5 {
 
 .product-card-black-bg {
     color: white !important;
-    background-color: black !important;
+    /* background-color: black !important; */
 }
 
 .product-card-white-bg {
     color: black;
-    background-color: white !important;
+    /* background-color: white !important; */
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: black;
+    --bs-tooltip-color: var(--bs-white);
 }
 
 #apple-logo {
