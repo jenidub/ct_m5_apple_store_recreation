@@ -17,6 +17,15 @@ h5 {
     font-size: 30px !important;
 }
 
+form {
+    display: inline-block;
+    padding: 30px;
+}
+
+table {
+    width: 75%;
+}
+
 .black-sans-serif {
     color: black;
     font-weight: 500;
@@ -33,6 +42,14 @@ h5 {
     margin: 0 15px;
     font-size: 10px;
     font-weight: lighter;
+}
+
+.lg-screen-content {
+    display: none;
+}
+
+.header-spacer {
+    display: none;
 }
 
 .header-section {
@@ -57,14 +74,17 @@ h5 {
     font-weight: bold;
 }
 
+.product-card-black-bg img,
+.product-card-white-bg img {
+    height: 450px;
+}
+
 .product-card-black-bg {
     color: white !important;
-    /* background-color: black !important; */
 }
 
 .product-card-white-bg {
     color: black;
-    /* background-color: white !important; */
 }
 
 .custom-tooltip {
@@ -77,16 +97,40 @@ h5 {
     justify-content: flex-end;
 }
 
+#nav-icons {
+    display: none;
+}
+
 #product-category-gallery {
     display: flex;
     justify-content: center;
 }
 
 #hero-text {
-    max-width: 600px !important;
+    max-width: 600px;
 }
 
 #shop-support-form,
 #help-support-form {
     display: none;
+}
+
+/* CSS Styling for iPad */
+@media screen and (min-width: 768px) {
+    #hero-text {
+        max-width: 100% !important;
+    }
+    .support-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .support-card-container img {
+        height: 400px !important;
+    }
+    
+    .support-spacer {
+        display: none;
+    }
 }
