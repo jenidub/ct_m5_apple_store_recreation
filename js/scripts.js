@@ -1,5 +1,7 @@
 // ********** ASSIGNMENT PART 1 *************
 // Bootstrap Component Supporting JS Scripts
+
+// querySelector Variables for Bootstrap JS functions
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
@@ -9,6 +11,7 @@ const shopFormDiv = document.querySelector("#shop-support-form")
 const appleSupportCard = document.querySelector("#apple-support-card")
 const appleShopCard = document.querySelector("#apple-shop-card")
 
+// Event Listener function when the user clicks the Support card element
 appleSupportCard.addEventListener("click", () => {
     if (supportFormDiv.classList.contains("visible")) {
         supportFormDiv.classList = "invisible"
@@ -20,6 +23,7 @@ appleSupportCard.addEventListener("click", () => {
     }
 })
 
+// Event Listener function when the user clicks the Shop card element
 appleShopCard.addEventListener("click", () => {
     if (shopFormDiv.classList.contains("visible")) {
         shopFormDiv.classList = "invisible"

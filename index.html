@@ -1,12 +1,3 @@
-<!-- Final To Do List before <button -->
-<!-- (3) README file with the following info:
-Include a README.md file that provides:
-i. A brief description of the website you emulated.
-ii. How you used Bootstrap components in your project.
-iii. A summary of each JavaScript function and how you would
-integrate it in the future. 
--->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,19 +21,20 @@ integrate it in the future.
         <!-- Navbar Section -->
         <nav class="navbar navbar-expand-md mt-3 ms-3">
             <div class="container-fluid">
-                <!-- Brand Logo -->
+                <!-- Apple Brand Logo - Icon from Flaticon https://www.flaticon.com/free-icons/logos -->
+                <!-- Attribution: Apple free icon created by Pixel perfect at Flaticon -->
                 <a id="apple-logo" class="navbar-brand" href="#">
-                    <img src="./img/apple-logo.png" alt="Apple Brand Logo" width="30" height="30">
+                    <img src="./img/apple-logo.png" alt="Apple Brand Logo from Pixel perfect at Flaticon.com" width="30" height="30">
                 </a>
         
-                <!-- Toggler Button for Small Screens -->
+                <!-- Menu Toggle Button for Mobile Phone Screens up to 768px -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                 aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
         
-                <!-- Collapsible Navbar Links -->
+                <!-- Navbar Menu Links -->
                 <div class="collapse navbar-collapse nav-link-container" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" href="#">Store</a>
@@ -56,16 +48,20 @@ integrate it in the future.
                     </div>
                 </div>
         
-                <!-- Right-Aligned Icons -->
+                <!-- Search and Shopping Bag Icons from Flaticon https://www.flaticon.com/free-icons/logos -->
+                <!-- Attribution: Loupe free icon created by Pixel perfect at Flaticon -->
+                <!-- Attribution: Market free icon created by Cap Cool at Flaticon  -->
                 <div id="nav-icons" class="d-lg-flex align-items-center">
                     <img class="mx-2" src="./img/search.png" alt="Search Apple Store icon" width="20" height="20">
-                    <img class="mx-3" src="./img/shopping-bag.png" alt="View Shopping Cart icon" width="28" height="28">
+                    <img class="mx-3" src="./img/shopping-bag.png" alt="View Shopping Bag icon" width="28" height="28">
                 </div>
             </div>
         </nav>
         
         
         <!-- Hero Section -->
+        <!-- Includes h1 introduction to the store and options to speak to a specialist, visit a store -->
+        <!-- Used the row-col Bootstrap Grid with custom CSS, spacer <div> sections -->
         <header class="header-section row">
             <div id="hero-text" class="col-lg-7 d-flex justify-content-center align-items-center">
                 <h1 class="text-align-center px-4 my-0">
@@ -74,6 +70,8 @@ integrate it in the future.
                 </h1>
             </div>
             <div class="col-lg-2 header-spacer"></div>
+            <!-- Map Pin Icons from Flaticon https://www.flaticon.com/free-icons/logos -->
+            <!-- Attribution: Location free icon created by Freepik at Flaticon -->           
             <div class="col-lg-3 me-0 lg-screen-content">
                 <div class="row my-2">
                     <img class="col-3 m-0" src="./img/map-pin.png" alt="" width="15px" height="50px">
@@ -93,46 +91,72 @@ integrate it in the future.
         </header>
 
         <!-- Product Category Card Gallery -->
+        <!-- Used the Card and Tooltip Bootstrap components -->
+        <!-- Images used are from store.apple.com website -->
         <div class="row" id="product-category-gallery">
             <div class="col-2 w-auto gallery-listing" data-bs-toggle="tooltip" data-bs-placement="top"
             data-bs-custom-class="custom-tooltip"
             data-bs-title="If you can dream it, Mac can do it.">
-                <img class="gallery-img" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-mac-nav-202410?wid=400&hei=260&fmt=png-alpha&.v=1728342368663" alt="">
+                <img 
+                    class="gallery-img"
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-mac-nav-202410?wid=400&hei=260&fmt=png-alpha&.v=1728342368663"
+                    alt="Mac Product Family - Macbook, Mac Mini, iMac, Mac Pro"
+                >
                 <p class="text-center black-sans-serif" id="gallery-p">Mac</p>
             </div>
             <div class="col-2 w-auto gallery-listing" data-bs-toggle="tooltip" data-bs-placement="top"
             data-bs-custom-class="custom-tooltip"
             data-bs-title="Designed to be loved.">
-                <img class="gallery-img" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202409_GEO_US?wid=400&hei=260&fmt=png-alpha&.v=1723857157128" alt="">
+                <img
+                    class="gallery-img"
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202409_GEO_US?wid=400&hei=260&fmt=png-alpha&.v=1723857157128"
+                    alt="iPhone Product Family - iPhone 16 and iPhone 16 Pro"
+                >
                 <p class="text-center black-sans-serif" id="gallery-p">iPhone</p>
             </div>
             <div class="col-2 w-auto gallery-listing" data-bs-toggle="tooltip" data-bs-placement="top"
             data-bs-custom-class="custom-tooltip"
             data-bs-title="Touch, draw, and type on one magical device.">
-                <img class="gallery-img" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=png-alpha&.v=1714168620875" alt="">
+                <img
+                    class="gallery-img"
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202405?wid=400&hei=260&fmt=png-alpha&.v=1714168620875"
+                    alt="iPad Product Family - iPad and iPad mini">
                 <p class="text-center black-sans-serif" id="gallery-p">iPad</p>
             </div>
             <div class="col-2 w-auto gallery-listing" data-bs-toggle="tooltip" data-bs-placement="top"
             data-bs-custom-class="custom-tooltip"
             data-bs-title="The ultimate device for a healthy life.">
-                <img class="gallery-img" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1724165625838" alt="">
+                <img
+                    class="gallery-img"
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1724165625838"
+                    alt="Apple Watch Product Family - Apple Watch 10, Apple Watch 10 Sport, Apple Watch 10 Ultra"
+                >
                 <p class="text-center black-sans-serif" id="gallery-p">Apple Watch</p>
             </div>
             <div class="col-2 w-auto gallery-listing" data-bs-toggle="tooltip" data-bs-placement="top"
             data-bs-custom-class="custom-tooltip"
             data-bs-title="Pushing boundaries from the inside out.">
-                <img class="gallery-img" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-vision-pro-nav-202401?wid=400&hei=260&fmt=png-alpha&.v=1702403595269" alt="">
+                <img
+                    class="gallery-img"
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-vision-pro-nav-202401?wid=400&hei=260&fmt=png-alpha&.v=1702403595269"
+                    alt="Apple Vision Pro Product Photo"
+                >
                 <p class="text-center black-sans-serif" id="gallery-p">Apple Vision Pro</p>
             </div>
             <div class="col-2 w-auto gallery-listing" data-bs-toggle="tooltip" data-bs-placement="top"
             data-bs-custom-class="custom-tooltip"
             data-bs-title="The next evolution of sound and comfort.">
-                <img class="gallery-img" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airpods-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1722974349822" alt="">
+                <img
+                    class="gallery-img"
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airpods-nav-202409?wid=400&hei=260&fmt=png-alpha&.v=1722974349822"
+                    alt="AirPods Product Photo">
                 <p class="text-center black-sans-serif" id="gallery-p">Airpods</p>
             </div>
         </div>
 
         <!-- Featured Products Section -->
+        <!-- Card Gallery wit Overlay Text with the 3 newest released products: iPhone 16 Pro, Apple Watch Pro, iPad Mini -->
+        <!-- Images used are from store.apple.com website -->
         <h2 class="mt-5 mb-4 mx-4">
             <span class="black-sans-serif">The latest.</span> Take a look at what’s new, right now.
         </h2>
@@ -175,13 +199,17 @@ integrate it in the future.
             </div>
         </div>
 
-        <!-- Support Request section - Shop and Service -->
+        <!-- Support Request section - Shopping and Service -->
+        <!-- Two Cards with Overlays that present two options for support: Shopping and Tech Support -->
+        <!-- Once clicked, a form will open below that matches the category that was clicked -->
+        <!-- Images used are from store.apple.com website -->
         <h2 class="mt-5 mb-4 mx-4">
             <span class="black-sans-serif">Help is here.</span> Whenever and however you need it.
         </h2>
         <div class="support-card-container">
             <div id="apple-support-card" class="card support-card-black-bg my-2">
-                <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-holiday-specialist-help-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728571564886" class="card-img img-fluid" alt="...">
+                <img
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-50-holiday-specialist-help-202411?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1728571564886" class="card-img img-fluid" alt="...">
                 <div class="card-img-overlay">
                     <p class="card-text my-1"><small>Apple Support Specialist</small></p>
                     <h5 class="card-title card-headline">Shop one on one with a Specialist. Online or in a store.</h5>
@@ -198,7 +226,8 @@ integrate it in the future.
             </div>
         </div>
     
-        <!-- #5a Forms based on type of help needed - show/hide contact form based on support selection -->
+        <!-- Tech Support Form - hidden on page load / revealed on button click -->
+        <!-- Uses the Form Bootstrap component with a legend, name, email, phone, a message textarea, and a submit button -->
         <div id="help-support-form" class="invisible my-2">
             <form>
                 <legend>Schedule an Appointment with an Apple Support Specialist</legend>
@@ -228,6 +257,8 @@ integrate it in the future.
             </form>
         </div>
 
+        <!-- Shopping Support Form - hidden on page load / revealed on button click -->
+        <!-- Uses the Form Bootstrap component with a legend, name, email, phone, a message textarea, and a submit button -->
         <div id="shop-support-form" class="invisible my-2">
             <form>
                 <legend>Schedule an Appointment with an Apple Shop Specialist</legend>
@@ -257,14 +288,16 @@ integrate it in the future.
             </form>
         </div>
 
-        <!-- #6 Table of Price Ranges -->
+        <!-- #6 Table of Price Ranges (not on the origin website )-->
+        <!-- Provides an overview of the product categories & their products with the base price for each -->
+        <!-- Uses the Bootstrap table component with striped design and hover support-->
         <h2 class="mt-5 mx-4">
             <span class="black-sans-serif">The Apple Lineup.</span> Find the product that fits you best.
         </h2>
         <table class="table table-striped table-hover table-sm my-3 ms-4">
             <thead>
                 <tr>
-                    <th class="" scope="col">Category</th>
+                    <th scope="col">Category</th>
                     <th scope="col">Name</th>
                     <th scope="col">Price</th>
                     <th scope="col">In Stock</th>
@@ -337,6 +370,8 @@ integrate it in the future.
         <!-- Bootstrap JavaScript Imports -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        
+        <!-- Link to the local JS file that has Bootstrap supporting JS code and the 4 JS functions written to support the website -->
         <script src="./js/scripts.js"></script>
     </body>
 </html>
