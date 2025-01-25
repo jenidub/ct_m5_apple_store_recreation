@@ -1,3 +1,12 @@
+<!-- Final To Do List before <button -->
+<!-- (3) README file with the following info:
+Include a README.md file that provides:
+i. A brief description of the website you emulated.
+ii. How you used Bootstrap components in your project.
+iii. A summary of each JavaScript function and how you would
+integrate it in the future. 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,17 +28,22 @@
     
     <body class="h-100">
         <!-- Navbar Section -->
-        <nav class="navbar navbar-expand-lg mt-3 ms-3">
-            <div class="container-fluid row">
-                <a id="apple-logo" class="navbar-brand col d-block" href="#">
+        <nav class="navbar navbar-expand-md mt-3 ms-3">
+            <div class="container-fluid">
+                <!-- Brand Logo -->
+                <a id="apple-logo" class="navbar-brand" href="#">
                     <img src="./img/apple-logo.png" alt="Apple Brand Logo" width="30" height="30">
                 </a>
-                <button class="navbar-toggler col" type="button" data-bs-toggle="collapse" 
+        
+                <!-- Toggler Button for Small Screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                 aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse navbar-section" id="navbarNavAltMarkup">
+        
+                <!-- Collapsible Navbar Links -->
+                <div class="collapse navbar-collapse nav-link-container" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" href="#">Store</a>
                         <a class="nav-link" href="#">Mac</a>
@@ -38,36 +52,38 @@
                         <a class="nav-link" href="#">Watch</a>
                         <a class="nav-link" href="#">Vision</a>
                         <a class="nav-link" href="#">AirPods</a>
-                        <a class="nav-link" href="#">TV & Home</a>
+                        <a class="nav-link" href="#">AppleTV</a>
                     </div>
                 </div>
-                <div id="nav-icons" class="d-sm-none d-lg-block">
-                    <img class="mx-1" src="./img/search.png" alt="Search Apple Store icon" width="20" height="20">
-                    <img class="mx-4" src="./img/shopping-bag.png" alt="View Shopping Cart icon" width="28" height="28">
+        
+                <!-- Right-Aligned Icons -->
+                <div id="nav-icons" class="d-lg-flex align-items-center">
+                    <img class="mx-2" src="./img/search.png" alt="Search Apple Store icon" width="20" height="20">
+                    <img class="mx-3" src="./img/shopping-bag.png" alt="View Shopping Cart icon" width="28" height="28">
                 </div>
             </div>
         </nav>
         
+        
         <!-- Hero Section -->
-        <header class="header-section">
-            <div class="col-1 header-spacer"></div>
-            <div id="hero-text" class="d-flex justify-content-center align-items-center">
+        <header class="header-section row">
+            <div id="hero-text" class="col-lg-7 d-flex justify-content-center align-items-center">
                 <h1 class="text-align-center px-4 my-0">
                     <span class="black-sans-serif">Store.</span>
                     The best way to buy the products you love.
                 </h1>
             </div>
-            <div class="col-2 header-spacer"></div>
-            <div class="col-3 me-0 lg-screen-content">
+            <div class="col-lg-2 header-spacer"></div>
+            <div class="col-lg-3 me-0 lg-screen-content">
                 <div class="row my-2">
-                    <img class="col-3 m-0" src="./img/map-pin.png" alt="" width="40px" height="40px"> <!-- rounded image of agent -->
+                    <img class="col-3 m-0" src="./img/map-pin.png" alt="" width="15px" height="50px">
                     <div class="col-9 m-0">
                         <p class="black-sans-serif m-0">Need shopping help?</p>
                         <p class="title-help-link m-0"><a href="#">Ask a Specialist</a></p>  
                     </div>
                 </div>
                 <div class="row my-3">
-                    <img class="col-3 m-0" src="./img/map-pin.png" alt="" width="40px" height="40px"> <!-- map pin -->
+                    <img class="col-3 m-0" src="./img/map-pin.png" alt="" width="15px" height="50px">
                     <div class="col-9 m-0">
                         <p class="black-sans-serif m-0">Visit an Apple Store</p>
                         <p class="title-help-link m-0"><a href="#">Find one near you ></a></p>
@@ -120,8 +136,8 @@
         <h2 class="mt-5 mb-4 mx-4">
             <span class="black-sans-serif">The latest.</span> Take a look at what’s new, right now.
         </h2>
-        <div>
-            <div class="card product-card-black-bg my-2">
+        <div class="row mx-1">
+            <div class="card product-card-black-bg my-2 col-lg">
                 <img
                     src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-iphone-16-pro-202409_GEO_US?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1726165763260"
                     class="card-img product-card-img"
@@ -133,7 +149,7 @@
                     <p class="card-text my-1"><small>From $999 or $41.62/mo. for 24 mo.</small></p>
                 </div>
             </div>
-            <div class="card product-card-white-bg my-2">
+            <div class="card product-card-white-bg my-2 col-lg">
                 <img
                     src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-watch-s10-202409?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1724095131742"
                     class="card-img product-card-img"
@@ -145,7 +161,7 @@
                     <p class="card-text card-pricing my-1"><small>From $399 or $33.25/mo. for 12 mo.</small></p>
                 </div>
             </div>
-            <div class="card product-card-white-bg my-2">
+            <div class="card product-card-white-bg my-2 col-lg">
                 <img
                     src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-40-ipad-mini-202410?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1727814498187"
                     class="card-img product-card-img"
@@ -209,7 +225,7 @@
             </form>
         </div>
 
-        <div id="shop-support-form" class="invisible">
+        <div id="shop-support-form" class="invisible my-2">
             <form>
                 <legend>Schedule an Appointment with an Apple Shop Specialist</legend>
                 <div class="mb-3">
@@ -315,37 +331,6 @@
         <!-- Bootstrap JavaScript Imports -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-        <script>
-            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-            
-            const supportFormDiv = document.querySelector("#help-support-form")
-            const shopFormDiv = document.querySelector("#shop-support-form")
-
-            const appleSupportCard = document.querySelector("#apple-support-card")
-            const appleShopCard = document.querySelector("#apple-shop-card")
-            
-            appleSupportCard.addEventListener("click", () => {
-                if (supportFormDiv.classList.contains("visible")) {
-                    supportFormDiv.classList = "invisible"
-                    supportFormDiv.style.display = "none"
-                } else if (supportFormDiv.classList.contains("invisible")) {
-                    supportFormDiv.classList = "visible"
-                    supportFormDiv.style.display = "inline"
-                    shopFormDiv.style.display = "none"
-                }
-            })
-
-            appleShopCard.addEventListener("click", () => {
-                if (shopFormDiv.classList.contains("visible")) {
-                    shopFormDiv.classList = "invisible"
-                    shopFormDiv.style.display = "none"
-                } else if (shopFormDiv.classList.contains("invisible")) {
-                    shopFormDiv.classList = "visible"
-                    shopFormDiv.style.display = "inline"
-                    supportFormDiv.style.display = "none"
-                }
-            })
-        </script>
+        <script src="./js/scripts.js"></script>
     </body>
 </html>
